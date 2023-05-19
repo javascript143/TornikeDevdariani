@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" integrity="sha512-YTuMx+CIxXa1l+j5aDPm98KFbVcYFNhlr2Auha3pwjHCF1lLbY9/ITQQlsUzdM1scW45kHC5KNib4mNa1IFvJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <div class="calculator">
+                <h1>Calculator!<i class="fa-solid fa-calculator" style="color: #055bf0;"></i></h1>
+                <form onsubmit="Calculator()">
+                <input type="number" placeholder="num1" id="num1">
+                <input placeholder="action" id="action">
+                <input placeholder="num2" id="num2">
+                <input type="submit" value="=">
+                </form>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script type="text/javascript">
+            function Calculator() {
+                var num1 = document.getElementById("num1").value
+                var action = document.getElementById("action").value
+                var num2 = document.getElementById("num2").value
+                event.preventDefault()
+                    if (num1 == "5" && action == "+" && num2 == "8") {
+                        alert("13")
+                    } else if (num1 == "5" && action == "-" && num2 == "8") {
+                        alert ("-3")
+                    } else if (num1 == "5" && action == "x" && num2 == "8") {
+                        alert ("40")
+                    } else if (num1 == "5" && action == "/" && num2 == "8") {
+                        alert ("0.625")
+                    } else if (num1 == "15" && action == "-" && num2 == "8") {
+                        alert ("7")
+                    } else if (num1 == "15" && action == "x" && num2 == "8") {
+                        alert ("120")
+                    }   else if (num1 == "15" && action == "/" && num2 == "8") {
+                        alert ("1.875")
+                    } else {
+                        alert ("I dont know :))")
+                    }
+            }
+        </script>
+    </body>
+</html>
