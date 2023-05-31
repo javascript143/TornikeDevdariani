@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(0deg, rgba(4,113,115,1) 65%, rgba(31,31,60,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    margin-top: 200px;
+    background-color: rgba(68, 68, 68, 0.39);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+}
+
+.calculator input {
+    padding: 10px;
+    border-radius: 5px;
+}
+.calculator h1 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px -5px 10px ;
+}
