@@ -1,0 +1,12 @@
+form {
+    display: block;
+    padding: 20px;
+}
+input {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+input:hover {
+    scale: 1.1;
+}

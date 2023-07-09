@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/reg.css">
+    </head>
+    <body>
+        <header>
+
+
+        </header>
+
+        <main>
+            
+        </main>
+    </body>
+</html>
+<html>
+    <head>
+        <link rel="icon" href="images/circle_round icon_tesla_icon.png">
+        <title>Tesla</title>
+        <link rel="stylesheet" href="styles/loginstyle.css">
+        <meta charset="utf-8">
+        <meta author="Tornike Devdariani">
+        <meta name="viewpoint" content="width-device-width" initial-scale="1.0">
+        <meta name="keyword" content="electric cars,Tesla,cars, Solar energy, Clean energy">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="leftnav">
+                    <a id="burgericon" class="burger" onclick="toggleLogo()"><img id="burger" src="images/burger_menu_navigation_navbar_icon.png" width="45px" height="45px"></a>
+                    <div id="burgermenu">
+                        <a href="/ContactUs.html">Contact US</a>
+                        <a href="https://www.tesla.com/careers">Careers</a> 
+                        <a href="https://www.tesla.com/tradein">Trade in</a>
+                        <a href="https://www.tesla.com/utilities">Utilities</a> 
+                        <a href="https://www.tesla.com/events">Events</a>
+                        <a href="https://www.tesla.com/support">Support</a>
+                    </div>
+                </div>                
+                <div class="centernav">
+                    <ul>
+                        <li><a href="/home.html">Home</a></li>
+                        
+                        <li><a href="/shop.html">Shop ▼</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Model-3</a></li>
+                                <li><a href="#">Model-S</a></li>
+                                <li><a href="#">model-Y</a></li>
+                                <li><a href="#">Model-X</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="/about.html">About</a></li>
+    
+                        <li><a href="/login.html">Account</a></li>
+    
+                    </ul>
+                </div>
+
+                <div class="rightnav">
+                    <input onclick="SearchLogo()" id="searchHolder" placeholder="Search"> <button id="searchButton">Search</button>
+                </div>
+            </nav>
+        </header>
+
+        <script type="text/javascript">
+             function login() {
+                var username = document.getElementById("inputUser").value
+                var password = document.getElementById("inputPassword").value
+                event.preventDefault
+                    if (username == "sertified" && password == "student") {
+                        // window.location.href = "/home.html"; 
+                        window.location.href= "/home.html"; alert ("login succesful");
+                    }   else {
+                        alert ("login failed");
+                    }
+            }
+
+            function toggleLogo() {
+                var x = document.getElementById("burgermenu");
+                if (x.style.display === "block") {
+                    x.style.display = "none"
+                } else {
+                    x.style.display = "block"
+                }
+            }
+
+            function SearchLogo() {
+                var x = document.getElementById("searchButton");
+                if (x.style.display == "none") {
+                    x.style.display = "none"
+                } else {
+                    x.style.display = "inline-flex"
+                }
+            }
+
+           
+        </script>
+        
+        <main>
+            
+            <div class="logindiv">
+                <form>
+                    <input id="firstname" type="text" placeholder="Enter your name">
+                    <input id="lastname" type="text" placeholder="Enter your lastname">
+                    <input id="email" type="text" placeholder="Enter your email">
+                    <input id="username" type="text" placeholder="Enter your username">
+                    <input id="password" type="text" placeholder="Enter your Password">
+                    <button onclick="handleRegistration()" type="submit">Register</button>
+    
+                </form>
+                <script type="text/javascript" src="scripts/reg.js"></script>
+            </div>
+        </main>
+
+        <footer>
+            <div class="leftFoot">
+                <a href="/home.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/">Join US</a>
+                <a href="https://www.tesla.com/findus/list">Locations</a>
+            </div>
+        
+            <div class="centerFoot">
+                <a href="#">Company</a>
+                <a href="#">Dealerships</a>
+                <a href="#">Courses</a>
+                <a href="#">Partnership</a>
+            </div>
+        
+            <div class="centerFoot1">
+                <a href="#">Contact US</a>
+                <a href="#">Find US</a>
+                <a href="#">School</a>
+            </div>
+            <div class="rightfoot">
+                <h4>Write us your number we'll contact you</h4>
+                <input type="number" placeholder="number"><input type="submit">
+            </div>
+            <div class="rightfoot">
+                <h4>Write us your number we'll contact you</h4>
+                <input type="text" placeholder="number"><input type="submit">
+            </div>
+
+        </footer>
+            
+    </body>
+</html>
