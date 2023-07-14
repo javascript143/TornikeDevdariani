@@ -1,0 +1,425 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: Tesla;
+    src: url(font/TESLA.ttf);
+}
+
+:root {
+    --myfavouritefont: Tesla;
+    --myfavouritecolor: #047173;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+body {
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    /* background-image: url(cool-background.png); */
+    background-size: cover;
+    background-color: #047173;
+}
+
+nav {
+    width: 100%;
+    right: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgba(110, 108, 112, 0.527);
+    border-style: hidden;   
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(---myfavouritefont);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -5px 20px;
+
+    
+}
+nav a {
+    text-decoration: none;
+    color: red;
+    text-shadow: 0px 0px 2px;
+   
+}
+nav a:hover {
+    color: aliceblue;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
+
+.leftnav {
+    display: block;
+    padding-top: 10px;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+#burgermenu {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(110, 108, 112, 0.527);
+    position: absolute;
+    display: none;
+    border-style: hidden;
+    
+    
+}
+#burgermenu a {
+    display: block ;
+    padding: 30px;
+    
+}
+#burgericon {
+    padding-left: 40px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+    text-align: center;
+}
+
+li a {
+    display: block;
+}
+.dropdown li {
+    display: block;
+    margin-left: -40;
+    padding-top: 10;
+}
+.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li:hover ul.dropdown {
+    display: block;
+}
+
+.centernav {
+    display: block;
+}
+.rightnav {
+    padding-top: 12px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+#searchHolder {
+    padding: 10px;
+    border-style: hidden;
+    border-start-start-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.521);
+    
+}
+#searchButton {
+    padding: 10px;
+    margin-left: -2px;
+    border-left: none;
+    border-style: hidden;
+    color: red;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.541);
+    display: none;
+}
+#searchButton:hover {
+    background-color: rgb(175, 175, 175);
+    box-shadow: 0px 0px 10px #033f41;
+}
+#searchHolder:hover {
+    box-shadow: 0px 0px 10px #033f41;
+    background-color: #c7c2c2;
+}
+
+.firstsect {
+    width: 100%;
+    right: 0;
+    top: 50;
+    height: 500px;
+    text-align: center;
+    z-index: -1;
+    margin-top: -200px;
+}
+
+#future {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px;
+    animation-name: Teslaoba;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes Teslaoba {
+    50% {opacity: 1; }
+    100% {opacity: 0;}
+    0% {margin-left: -10%;}
+    100% {margin-left: 10%;}
+}
+#joinButton {
+    position: relative;
+    top: 90%;
+    opacity: 0;
+    animation-name: Joining;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes Joining {
+    50% {opacity: 1; text-shadow: 0px 0px 10px;}
+
+}
+
+.teslaTeam {
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    background-image: url(cool-background.png);
+    background-size: cover;
+}
+.teslaTeamMember {
+    color: #1a4344;
+    display: block;
+    background-image: url(cool-background.png);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
+}
+.teslaTeamMember:hover {
+    transform: scale(1.05);
+    transform: translatey(-10px);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 40px;
+}
+.teslaTeam img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.firstsect a {
+    position: relative;
+    margin-top:200px ;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px;
+    font-size: 30px;
+    z-index: 2;
+    text-decoration: none;
+    font-weight: bold;
+}
+.firstsect p {
+    text-align: center;
+    color: aliceblue;
+}
+#teslafactory {
+    -webkit-box-shadow: -10px -10px 20px;
+            box-shadow: -10px -10px 20px;
+    color: rgba(207, 213, 214, 0.507);
+    border-radius: 10px;
+}
+#roboTech {
+    position: relative;
+    margin-left: -400px;
+    margin-bottom: -15px;
+    -webkit-box-shadow: -10px -10px 20px;
+            box-shadow: -10px -10px 20px;
+    color: rgba(207, 213, 214, 0.507);
+    border-radius: 10px;
+}
+
+#teslafactory:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 1.4s;
+         -o-transition-duration: 1.4s;
+            transition-duration: 1.4s;
+}
+#roboTech:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition-duration: 1.4s;
+         -o-transition-duration: 1.4s;
+            transition-duration: 1.4s;
+}
+
+.secondsect {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: #4443434b;
+}
+footer {
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 50px;
+    background-color: #5e5e5e;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px;
+            box-shadow: 0px 0px 10px;
+    margin-top: 50px;
+    position: absolute;
+    width: 95%;
+    margin-top: 100px;
+    color: #9e9e9e;  
+    left: 10px;
+
+    
+}
+
+.line {
+    height: 1px;
+    background-color: #033f41;
+    margin-left: -50px;
+    right: 40px;
+}
+#topFoot {
+    display: flex;
+    margin-left: 200px;
+}
+.footerSocialMedias {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 400px;
+}
+#middleFoot {
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            
+}
+#topfooter {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: #e7e7e7;
+    padding: 3px;
+    text-shadow: 0px 0px 3px;
+    display: block;
+}
+
+footer a:hover {
+    color: #161515;
+    scale: 1.1;
+}
+
+.rightfoot {
+    text-align: center;
+    margin-top:-10px;
+    padding: 10px;
+}
+.rightfoot h4 {
+    color: #ffff;
+    text-shadow: 0px 0px 3px;
+}
+.rightfoot input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px;
+}
+.rightfoot input:hover{
+    box-shadow: 0px 0px 10px;
+    color: #033f41;
+    background-color: #bdb7b7;
+}
+.rightfoot button {
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 2px;
+    border: 1px;
+    background-color: #9ba7a0;
+}
+.rightfoot button:hover{
+    box-shadow: 0px 0px 10px;
+    color: #033f41;
+    background-color: #248586;
+}
+#copyRight {
+    text-align: center;
+}
+footer {
+    margin-top:1400px ;
+}
+
+@media (max-width:480px) {
+   
+    
+   
+}
+
+@media(max-width:1024px) {
+    
+    .teslaTeamMember{
+        width: 200px;
+    }
+    .firstsect {
+        width: 500px;
+    }
+    .secondsect {
+        font-size: 30px;
+    }
+    footer {
+        margin-top:3000px ;
+    }
+    body {
+        width: 100%;
+        height: 2600px;
+    }
+    /* .teslaPhotos {
+        width: 200px;
+        height: auto;
+    } */
+    #burgermenu {
+        margin-top:14px ;
+    }
+    .searchHolder {
+        display: none;
+    }
+    
+    header a {
+        padding: 3px;
+    }
+    nav {
+        font-size: 16px;
+    }
+    #topfoot {
+        margin-left:30px ;
+        display: flex;
+    }
+}
+
