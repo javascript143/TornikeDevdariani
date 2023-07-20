@@ -21,19 +21,20 @@ header {
 body {
     margin-right: 0;
     margin-left: 0;
-    background-image: url(cool-background.png);
-    background-size: cover;
+    background: url("https://source.unsplash.com/_nWaeTF6qo0");    background-size: cover;
 }
 
 nav {
     width: 100%;
+    right: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
@@ -41,11 +42,14 @@ nav {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0px -5px 20px;
+
+    
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
+   
 }
 nav a:hover {
     color: aliceblue;
@@ -207,7 +211,7 @@ video {
 
 #teslap {
     font-family: Tesla;
-    font-size: 60px;
+ 
     padding:15px;
     animation-name: Teslaoba;
     opacity: 0;
@@ -341,6 +345,7 @@ footer {
     margin-top: 100px;
     color: #9e9e9e;  
     left: 10px;
+    z-index: -1;
 }
 
 .line {
@@ -435,7 +440,9 @@ footer a:hover {
     .searchHolder {
         display: none;
     }
-    
+    footer {
+        width: 92%;
+    }
     header a {
         padding: 3px;
     }

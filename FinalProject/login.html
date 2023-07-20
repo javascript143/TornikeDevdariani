@@ -14,7 +14,7 @@
         <header>
             <nav>
                 <div class="leftnav">
-                    <a id="burgericon" class="burger" onclick="toggleLogo()"><img id="burger" src="images/burger_menu_navigation_navbar_icon.png" width="45px" height="45px"></a>
+                    <a id="burgericon" class="burger" onclick="toggleLogo()"><img id="burger" src="images/3592857_burger_general_ham_list_menu_icon.svg" width="45px" height="45px"></a>
                     <div id="burgermenu">
                         <a href="ContactUs.html">Contact US</a>
                         <a href="https://www.tesla.com/careers">Careers</a> 
@@ -60,20 +60,23 @@
             </div>
             <form class="logindiv">
                 <div class="div">
-                    <img src="images/account_friend_human_man_member_icon.svg" width="200px">
+                    <img id="person" style="color: rgba(240, 248, 255, 0);" src="images/account_friend_human_man_member_icon.svg" width="200px">
 
                 </div>
-                <form onsubmit="login()">
-                    <label id="username">Username</label>
-                    <input placeholder="Type your username" id="inputUser">
-                    <label id="password">Password</label>
-                    <input type="password" id="inputPassword" placeholder="Type your password">
+                <form>
+                    <div class="inputs">
+                        <label id="username">Username</label>
+                        <input placeholder="Type your username" id="inputUser">
+                        <br>
+                        <label id="password">Password</label>
+                        <input type="password" id="inputPassword" placeholder="Type your password">
+                        <br>
+                    </div>
+                    <label id="agree">Stay logged in</label>
+                    <input type="checkbox" id="savePass">
+                    <input id="loginbutton" type="submit" value="login" onclick="login()">
                     <br>
-                    <label for="agree">Stay logged in</label>
-                    <input type="checkbox" id="agree">
-                    <input id="loginbutton" type="submit" value="login">
-                    <br>
-                    <a href="registration.html">Create acccount</a>
+                    <a id="register" href="registration.html">Create acccount</a>
                 </form>
             </div>
 

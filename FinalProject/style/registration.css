@@ -20,7 +20,7 @@ header {
 body {
     margin-right: 0;
     margin-left: 0;
-    background-image: url(cool-background.png);
+    background: url("https://source.unsplash.com/_nWaeTF6qo0");
     background-size: cover;
     width: 100%;
 
@@ -36,7 +36,7 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
@@ -45,11 +45,13 @@ nav {
     border-top-right-radius: 10px;
     box-shadow: 0px -5px 20px;
 
+    
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
+   
 }
 nav a:hover {
     color: aliceblue;
@@ -69,7 +71,7 @@ nav a:hover {
 #burgermenu {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     position: absolute;
     display: none;
     border-style: hidden;
@@ -171,6 +173,7 @@ button:hover {
 .socialMediaLinks {
     position: fixed;
     right: 0;
+    z-index: 999;
     
 }
 .socialMediaLinks a{
@@ -195,6 +198,7 @@ button:hover {
 
 #socialMediaP {
     display: none;
+    
 }
 
 main {
@@ -205,38 +209,55 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
 }
-.logindiv {
+.registerdiv {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-top: 5%;
-    width: 30%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    text-align: center;
+    display: inline-flex;
     background-color: rgba(211, 209, 209, 0.61);
     padding: 50px;
     border-radius: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     -webkit-box-shadow: 0px 0px 10px;
             box-shadow: 0px 0px 10px;
+
     
 }
-
-.logindiv input{
+#agree {
+    margin-top: 20px;
+    font-weight: 400;
+    color: #033f41;
+}
+.registerdiv input{
     padding: 10px;
+    border-bottom-style: groove; 
+    background-color: rgba(255, 255, 255, 0);
+    border-top-style: hidden;
+    border-left-style: hidden ;
+    border-right-style: hidden ;
+    border-color: #248586;
+    margin:3%;
+}
+.reg {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+#registerbutton {
     border-radius: 7px;
-    border-color: aliceblue;
-    margin:5%;
+    background-color:#f8ffff2d;
     border-style: hidden;
 }
-.logindiv input:hover{
+.registerdiv input:hover{
     -webkit-box-shadow: 0px 0px 5px;
             box-shadow: 0px 0px 5px;
     color: aliceblue;
 }
-#loginbutton {
+#registerbutton {
     cursor: pointer;
     padding-left: 15px;
     padding-right: 15px;
@@ -244,10 +265,8 @@ main {
 
 }
 
-#loginbutton:hover {
-    
-    background-color: rgb(7, 95, 172);
-    color: #ffff;
+#registerbutton:hover {
+    background-color: #248586;
     
 }
 
@@ -365,14 +384,20 @@ footer a:hover {
     #agree {
         width: 10px;
     }
-    .logindiv{
+    .socialMediaLinks {
+        width: 30px;
+        margin-right: 30px;
+    }
+    .registerdiv{
         padding: 10px;
         width: 80%;
         height: auto;
-        margin-top: 400px;
+        margin-top:90px;
     }
+   
     footer {
-        font-size: 40px;
+        font-size: 20px;
+        width: 93%;
     }
     nav {
         font-size: 25px;
@@ -388,10 +413,12 @@ footer a:hover {
         box-shadow: 0px 0px 20px;
     }
 
-    .socialMediaLinks img {
-        width: 100px;
-    }
+    
     #loginbutton {
         width: 30%;
+    }
+    #topFoot {
+        display: flex;
+        margin-left: 50px;
     }
 }

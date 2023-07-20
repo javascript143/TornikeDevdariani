@@ -20,8 +20,7 @@ header {
 body {
     margin-right: 0;
     margin-left: 0;
-    background-image: url(cool-background.png);
-    background-size: cover;
+    background: url("https://source.unsplash.com/_nWaeTF6qo0");    background-size: cover;
     width: 100%;
 
 }
@@ -37,7 +36,7 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
@@ -50,8 +49,8 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
    
 }
 nav a:hover {
@@ -174,6 +173,7 @@ button:hover {
 .socialMediaLinks {
     position: fixed;
     right: 0;
+    z-index: 999;
     
 }
 .socialMediaLinks a{
@@ -220,23 +220,35 @@ main {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.61);
     padding: 50px;
-    border-radius: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     -webkit-box-shadow: 0px 0px 10px;
             box-shadow: 0px 0px 10px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-weight: 500;
+    color: #033f41;
 }
 
 .logindiv input{
     padding: 10px;
     text-align: center;
-    border-bottom-style: groove; color: #9ba7a0;
+    border-bottom-style: groove; 
+    background-color: rgba(255, 255, 255, 0);
+    border-top-style: hidden;
+    border-left-style: hidden ;
+    border-right-style: hidden ;
+    border-color: #248586;
+    margin:2%;
+}
+#loginbutton {
     border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.61);
-    /* border-color: aliceblue; */
-    margin:5%;
+    background-color:#f8ffff2d;
     border-style: hidden;
+}
+#register {
+    color: #033f41;
+}
+.inputs {
+    display: grid;
 }
 .logindiv input:hover{
     -webkit-box-shadow: 0px 0px 5px;
@@ -277,7 +289,10 @@ footer {
 
     
 }
-
+footer h2 {
+    color:rgb(233, 231, 231);
+    text-shadow: 0px 0px 3px;
+}
 .line {
     height: 1px;
     background-color: #033f41;
@@ -315,7 +330,7 @@ footer a{
 }
 
 footer a:hover {
-    color: #161515;
+    color: #033f41;
     scale: 1.1;
 }
 
@@ -362,6 +377,7 @@ footer a:hover {
     
     footer {
         overflow: scroll;
+
     }
     #agree {
         width: 10px;
@@ -381,7 +397,12 @@ footer a:hover {
         font-size: 20px
     }
     footer {
-        font-size: 40px;
+        font-size: 20px;
+        width: 93%;
+    }
+    #topFoot {
+        display: flex;
+        margin-left: 40px;
     }
     nav {
         font-size: 25px;
@@ -398,7 +419,8 @@ footer a:hover {
     }
 
     .socialMediaLinks img {
-        width: 100px;
+        width: 50px;
+        
     }
     #loginbutton {
         width: 30%;

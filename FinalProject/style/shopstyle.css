@@ -23,19 +23,20 @@ body {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    background-image: url(cool-background.png);
-    background-size: cover;
+    background: url("https://source.unsplash.com/_nWaeTF6qo0"); 
 }
 
 nav {
     width: 100%;
+    right: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
@@ -44,11 +45,13 @@ nav {
     border-top-right-radius: 10px;
     box-shadow: 0px -5px 20px;
 
+    
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
+   
 }
 nav a:hover {
     color: aliceblue;
@@ -192,11 +195,12 @@ li:hover ul.dropdown {
     margin-top: 20px;
 }
 .model h1 {
-    color: red;
+    color: white
+    
 }
 .model {
     text-align: center;
-    background-color: #0000006e;
+    background-color: #000000af;
     color:#047173;
     text-shadow: 0px 0px 5px ;
     width: 620px;
@@ -342,6 +346,13 @@ footer a:hover {
     .ordercars {
         display: block;
         
+    }
+    footer {
+        width: 92%;
+    }
+    #topFoot {
+        margin-left: 50px;
+        font-size: 14px;
     }
     .model {
         width: 100%;

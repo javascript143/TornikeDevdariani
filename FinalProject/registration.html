@@ -14,7 +14,7 @@
         <header>
             <nav>
                 <div class="leftnav">
-                    <a id="burgericon" class="burger" onclick="toggleLogo()"><img id="burger" src="images/burger_menu_navigation_navbar_icon.png" width="45px" height="45px"></a>
+                    <a id="burgericon" class="burger" onclick="toggleLogo()"><img id="burger" src="images/3592857_burger_general_ham_list_menu_icon.svg" width="45px" height="45px"></a>
                     <div id="burgermenu">
                         <a href="ContactUs.html">Contact US</a>
                         <a href="https://www.tesla.com/careers">Careers</a> 
@@ -58,22 +58,24 @@
                 <a  href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ"><img src="images/youtube_icon.png"></a>
                 <a  href="https://twitter.com/Tesla"><img src="images/tweet_twitter_twitter logo_icon.png"></a>
             </div>
-            <div class="logindiv">
+            <div class="registerdiv">
                 <div><img src="images/register_registration_icon.svg" width="250px"></div>
-                <form onsubmit="register()">
-                    <label id="username">Username:</label>
-                    <input placeholder="Username" id="inputUser">
-                    <label id="password">Password:</label>
-                    <input type="password" id="inputPassword" placeholder="Password">
-                    <br>
-                    <label for="agree">Agree site rules</label>
-                    <input type="checkbox" id="agree">
-                    <input id="loginbutton" type="submit" value="register">
-                    
-                </form>
-            </div>
-
-            
+                <div class="reg">
+                    <form id="forma"> 
+                        <input id="firstName" type="text" placeholder="Enter your Name" >
+                        <input id="lastName" type="text" placeholder="Enter your last name" >         
+                        <input placeholder="Enter Username" id="inputUser">
+                        <input type="text" id="email" placeholder="Enter your email"  required>
+                        <p id="emailP"></p>
+                        <input type="password" id="inputPassword" placeholder="Enter Password"  required>
+                        <p id="passP"></p>
+                        <br>
+                        <label id="agree">Agree site rules</label>
+                        <input type="checkbox" id="agree">
+                        <input id="registerbutton"  type="submit" onclick="register()" value="register">
+                    </form>
+                </div>
+            </div> 
         </main>
 
         <footer>
@@ -123,7 +125,7 @@
 
         </footer>
         
-        <script type="text/javascript" src="scripts/loginPage.js">
+        <script type="text/javascript" src="scripts/registerPage.js">
             
         </script>
     </body>

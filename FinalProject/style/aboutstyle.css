@@ -23,9 +23,9 @@ body {
     height: 100%;
     margin-right: 0;
     margin-left: 0;
-    /* background-image: url(cool-background.png); */
+    /* background: url("https://source.unsplash.com/_nWaeTF6qo0"); */
     background-size: cover;
-    background-color: #047173;
+    background-color: #1503b3;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
@@ -51,8 +51,8 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
    
 }
 nav a:hover {
@@ -201,11 +201,9 @@ li:hover ul.dropdown {
     display: flex;
     justify-content: space-between;
     padding: 3%;
-    background-image: url(cool-background.png);
-    background-size: cover;
 }
 .teslaTeamMember {
-    color: #1a4344;
+    color: white;
     display: block;
     background-image: url(cool-background.png);
     padding: 10px;
@@ -376,25 +374,30 @@ footer {
     margin-top:1400px ;
 }
 
-@media (max-width:480px) {
-   
-    
-   
-}
 
-@media(max-width:1024px) {
-    
-    .teslaTeamMember{
-        width: 200px;
+
+@media  (max-width:1024px) {
+    #videoabout {
+        width: 100%;
     }
-    .firstsect {
-        width: 500px;
+    .teslaTeamMember{
+        width: 90%;
+    }
+    .teslaTeamMember img {
+        width: 100%;
+    }
+    .teslaTeam {
+        width: 90%;
+    }
+    #joinButton {
+        top: 60%;
     }
     .secondsect {
         font-size: 30px;
     }
     footer {
-        margin-top:3000px ;
+        margin-top:230% ;
+        width: 92%;
     }
     body {
         width: 100%;

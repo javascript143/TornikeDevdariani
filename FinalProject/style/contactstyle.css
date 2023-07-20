@@ -22,30 +22,36 @@ body {
     height: 100%;
     margin-right: 0;
     margin-left: 0;
-    background-color: #033f41;
+    background: url("https://source.unsplash.com/_nWaeTF6qo0");
     background-size: cover;
 }
 
 nav {
     width: 100%;
+    right: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background-color: rgba(110, 108, 112, 0.527);
+    background-color: rgba(221, 220, 221, 0.527);
     border-style: hidden;   
     font-size: 18px;
     font-weight: bold;
     font-family: var(---myfavouritefont);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    box-shadow: 0px -5px 20px;
+    z-index: 999;
+    
 }
 nav a {
     text-decoration: none;
-    color: red;
-    text-shadow: 0px 0px 2px;
+    color:white;
+    text-shadow: 0px 0px 3px;
+   
 }
 nav a:hover {
     color: aliceblue;
@@ -150,6 +156,7 @@ button:hover {
 .socialMediaLinks {
     position: fixed;
     right: 0;
+    z-index: 999;
     
 }
 .socialMediaLinks a{
@@ -180,7 +187,7 @@ button:hover {
     display: -ms-flexbox;
     display: flex;
     color: #fdfafa;
-    background-image: url(cool-background.png);
+    background-color: #50505080;
     background-size: cover;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -191,7 +198,6 @@ button:hover {
     text-shadow: 0px 0px 2px;
     -webkit-box-shadow: 0px 0px 20px;
             box-shadow: 0px 0px 20px;
-    color: #047173;
 }
 
 .contactdivmap {
@@ -225,13 +231,14 @@ button:hover {
 }
 .PhoneAndEmail a{
     text-decoration: none;
-    color: #047173;
+    color: white;
     font-size: 22px;
     padding-left: 10px;
 }
 .PhoneAndEmail a:hover {
     transform: scale(1.01);
     color: rgb(3, 63, 65);
+    transition-duration: 0.5s;
 }
 
 .rightContact {
@@ -240,6 +247,7 @@ button:hover {
     box-shadow: 0px 0px 10px;
     border-radius: 10px;
     background-image: url(cool-background.png);
+;
 }
 .rightContact:hover {
     transform: scale(1.04);
@@ -256,11 +264,13 @@ button:hover {
 .rightContact input{
     padding: 10px;
     margin: 15px; 
-    border-radius: 4px;  
     border: solid 1.5px;
-    background-color: #77b5b881;
+    background-color: #77b5b831;
     color:#245657;
     width: 150px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style:hidden;
     
 }
 .names {
@@ -270,6 +280,7 @@ button:hover {
 .rightContact input:hover{
     border-color: var(--myfavouritecolor);
     box-shadow: 0px 0px 10px;
+    transition-duration: 0.5s;
 }
 
 
@@ -416,7 +427,15 @@ footer a:hover {
 @media (min-width: 481px) and (max-width: 1024px) {
     .contactdiv {
         display: block;
-
+        width: 80%;
+        
+    }
+    footer {
+        width: 92%;
+    }
+    #topFoot {
+        margin-left: 40px;
+        font-size: 15px;
     }
     .rightContact input{
         width: 40%;
