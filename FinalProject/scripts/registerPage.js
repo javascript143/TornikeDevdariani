@@ -1,3 +1,12 @@
+function toggleLogo() {
+    var x = document.getElementById("burgermenu");
+    if (x.style.display === "block") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "block"
+    }
+}
+
 const form = document.querySelector('form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
