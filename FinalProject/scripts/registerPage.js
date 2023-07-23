@@ -7,7 +7,7 @@ function toggleLogo() {
     }
 }
 
-const form = document.querySelector('form');
+const form = document.querySelector('#form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 });
@@ -76,11 +76,11 @@ function register() {
 
     if (oldUsersData === null) {
         localStorage.setItem('usersData', JSON.stringify([user]));
-        alert('Congratulations, your account has been successfully created.');
     } else {
         oldUsersData.push(user);
         localStorage.setItem('usersData', JSON.stringify(oldUsersData));
-        alert('This account allready exists!')
+        alert('Congratulations, your account has been successfully created.');
+
     }
 }
 

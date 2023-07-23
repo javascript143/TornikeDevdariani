@@ -50,14 +50,16 @@ function login() {
             sessionStorage.setItem('sessionToken', sessionToken);
             if (savepass) {
                 document.cookie = `sessionToken=${sessionToken};expires=${atTime};path=/`
+            } else {
+                sessionStorage.setItem('SessionToken')
             }
             usersData[user].sessionToken = sessionToken;
             userExists = true;
 
-        }
-    }
+        };
+    };
 
-    loginForm.addEventListener('submit', function(e) {
+    loginForm.addEventListener('submit', function(e)  {
         e.preventDefault();
     });
 
@@ -65,7 +67,7 @@ function login() {
         alert("This account doesn't exists!")
     } else {
         window.location.href = '/loginSuccesful.html'
-    }
+    };
 
     localStorage.setItem('usersData', JSON.stringify(usersData));
 }
