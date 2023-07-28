@@ -43,7 +43,10 @@ function login() {
     timeNow = new Date();
     timeNow.setTime(timeNow.getTime() + 1 * 24 * 60 * 60 *1000);
 
-
+    loginForm.addEventListener('submit', function(e)  {
+        e.preventDefault();
+    });
+    
     for (let user = 0; user < usersData.length; user++) {
         if (usersData[user].username === username & usersData[user].password === password) {
             let sessionToken = generatesrting(36);
@@ -59,9 +62,7 @@ function login() {
         };
     };
 
-    loginForm.addEventListener('submit', function(e)  {
-        e.preventDefault();
-    });
+    
 
     if (userExists === false) {
         alert("This account doesn't exists!")
@@ -71,6 +72,12 @@ function login() {
 
     localStorage.setItem('usersData', JSON.stringify(usersData));
 }
+const form = document.querySelector('#form');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+});
+
+
 // class LoginClass {
 
 //     constructor(){
