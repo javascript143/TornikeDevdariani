@@ -42,10 +42,6 @@ function login() {
     atTime = timeNow.toUTCString();
     timeNow = new Date();
     timeNow.setTime(timeNow.getTime() + 1 * 24 * 60 * 60 *1000);
-
-    loginForm.addEventListener('submit', function(e)  {
-        e.preventDefault();
-    });
     
     for (let user = 0; user < usersData.length; user++) {
         if (usersData[user].username === username & usersData[user].password === password) {
@@ -62,6 +58,9 @@ function login() {
         };
     };
 
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+    })
     
 
     if (userExists === false) {
@@ -70,12 +69,10 @@ function login() {
         window.location.href = '/loginSuccesful.html'
     };
 
-    localStorage.setItem('usersData', JSON.stringify(usersData));
+    localStorage.setItem('usersData', JSON.parse(usersData));
 }
-const form = document.querySelector('#form');
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-});
+const form = document.querySelector('form');
+
 
 
 // class LoginClass {
