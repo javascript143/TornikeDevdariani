@@ -73,14 +73,13 @@ function register() {
         password: password
     }
     
-
     if (oldUsersData === null) {
         localStorage.setItem('usersData', JSON.stringify([user]));
     } else {
         oldUsersData.push(user);
         localStorage.setItem('usersData', JSON.stringify(oldUsersData));
         alert('Congratulations, your account has been successfully created.');
-
+        window.location.href = 'registration.html'
     }
 }
 

@@ -64,7 +64,7 @@ function login() {
     };
 
     if (userExists) {
-        window.location.href = '/loginSuccesful.html'
+        window.location.href = 'loginSuccesful.html'
         
     } else {
         alert("This account doesn't exists!")
