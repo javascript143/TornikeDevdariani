@@ -17,7 +17,7 @@ function SearchLogo() {
 }
 const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-function generatesrting(length) {
+function generateString(length) {
     let result = '';
     const charactersLength = characters.length;
 
@@ -32,46 +32,46 @@ function generatesrting(length) {
 
 function login() {
     let username, password, usersData, loginForm, userExists, timeNow, atTime ;
-    username = document.querySelector('#inputUser').value;
-    password = document.querySelector('#inputPassword').value;
+    username = document.getElementById('inputUser').value;
+    password = document.getElementById('inputPassword').value;
     usersData = localStorage.getItem('usersData');
     usersData = JSON.parse(usersData);
     userExists = false;
     loginForm = document.querySelector('form');
     savepass = document.getElementById('savePass').checked;
-    atTime = timeNow.toUTCString();
     timeNow = new Date();
     timeNow.setTime(timeNow.getTime() + 1 * 24 * 60 * 60 *1000);
+    atTime = timeNow.toUTCString();
     
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+    })
+
     for (let user = 0; user < usersData.length; user++) {
-        if (usersData[user].username === username & usersData[user].password === password) {
-            let sessionToken = generatesrting(36);
-            sessionStorage.setItem('sessionToken', sessionToken);
-            if (savepass) {
-                document.cookie = `sessionToken=${sessionToken};expires=${atTime};path=/`
+        if (usersData[user].username === username && usersData[user].password === password) {
+            let sessionToken = generateString(36);
+
+            if (savePass) {
+                document.cookie = `cookieToken=${sessionToken};expires=${atTime};path=/`;
+                sessionStorage.setItem('sessionToken', sessionToken);
             } else {
-                sessionStorage.setItem('SessionToken')
-            }
+                sessionStorage.setItem('sessionToken', sessionToken);
+            };
+
             usersData[user].sessionToken = sessionToken;
             userExists = true;
-
         };
     };
 
-    loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-    })
-    
-
-    if (userExists === false) {
-        alert("This account doesn't exists!")
-    } else {
+    if (userExists) {
         window.location.href = '/loginSuccesful.html'
+        
+    } else {
+        alert("This account doesn't exists!")
     };
 
     localStorage.setItem('usersData', JSON.parse(usersData));
 }
-const form = document.querySelector('form');
 
 
 
