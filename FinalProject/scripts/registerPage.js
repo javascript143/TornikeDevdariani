@@ -45,7 +45,8 @@ class Registration {
 
         if (this.patternEmail.test(email)) {
             this.resultEmail.innerHTML = 'Email is valid';
-            
+            this.result.style.color = 'green';
+
         } else {
             this.resultEmail.style.color = 'red';
             this.resultEmail.innerHTML = 'Email is invalid, please try another';
