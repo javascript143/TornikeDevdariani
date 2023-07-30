@@ -35,3 +35,12 @@ function filter() {
     }
 }
 
+function readmore() {
+    var x = document.getElementById("readmorep");
+    if (x.style.display == "none") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "flex"
+    }
+}
+

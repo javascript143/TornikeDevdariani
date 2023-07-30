@@ -25,11 +25,11 @@ class Registration {
         this.username = document.querySelector('#inputUser');
         this.oldUsersData = localStorage.getItem('usersData');
         this.oldUsersData = JSON.parse(this.oldUsersData);
-
+        this.agree = document.getElementById('agree').checked
         
 
     }
-
+    
     passwordChecker() {
         const password = this.usersPass.value;
 

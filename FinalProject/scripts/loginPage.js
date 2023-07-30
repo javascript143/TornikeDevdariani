@@ -51,9 +51,8 @@ function login() {
         if (usersData[user].username === username && usersData[user].password === password) {
             let sessionToken = generateString(36);
 
-            if (savePass) {
-                document.cookie = `cookieToken=${sessionToken};expires=${atTime};path=/`;
-                sessionStorage.setItem('sessionToken', sessionToken);
+            if (savepass) {
+                document.cookie = `cookieToken=${sessionToken};expires=${atTime};path=/`
             } else {
                 sessionStorage.setItem('sessionToken', sessionToken);
             };
@@ -63,15 +62,16 @@ function login() {
         };
     };
 
-    if (userExists) {
-        window.location.href = 'loginSuccesful.html'
-        
+    if (userExists) { 
+        window.location.href = 'loginSuccesful.html';
     } else {
-        alert("This account doesn't exists!")
-    };
+        alert('Username or Password is incorrect')
+    }
 
-    localStorage.setItem('usersData', JSON.parse(usersData));
-}
+    localStorage.setItem('usersData', JSON.stringify(usersData));
+
+};
+
 
 
 

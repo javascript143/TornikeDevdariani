@@ -208,19 +208,25 @@ button:hover {
 .filter input {
     padding: 10px;
     background-color: #04cfd31a;
-    margin-left: 70px;    
+    margin-left: 70px; 
+    border-color: #245657;   
+    border-radius: 10px;
 }
 #locations {
     display: grid;
-    grid-template-columns: auto;    
+    grid-template-columns: auto auto;    
     font-size: 20px;
     text-align: center;
     
 }
 #locations a {
-    color: white;
+    color:#09b4b9;
     font-weight: 200;
-    text-shadow: 0px 0px 2px;
+    text-shadow: 0px 0px 5px;
+}
+#locations a:hover {
+    color: white;
+    transition: 1s;
 }
 .contactdivmap {
     text-align: center;
